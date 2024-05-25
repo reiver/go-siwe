@@ -1,6 +1,6 @@
 # go-siwe
 
-Package **siwe** implements **Sign-In with Ethereum** (**SIWE**) (i.e., **ERC-4361**), for the Go programming language.
+Package **siwe** implements **Sign-In with Ethereum** (**SIWE**) (i.e., [ERC-4361](https://eips.ethereum.org/EIPS/eip-4361)), for the Go programming language.
 
 ## Documention
 
