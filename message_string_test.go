@@ -15,8 +15,8 @@ func TestMessage_String(t *testing.T) {
 	}{
 		{
 			Expected:
-				"\x19Ethereum Signed Message:"                      +"\n"+
-				"99"                                               +""+
+//				"\x19Ethereum Signed Message:"                      +"\n"+
+//				"99"                                               +""+
 				" wants you to sign in with your Ethereum account:" +"\n"+
 				""                                                  +"\n"+ // address
 				""                                                  +"\n"+
@@ -44,7 +44,8 @@ func TestMessage_String(t *testing.T) {
 				},
 			},
 			Expected:
-"\x19Ethereum Signed Message:\n395"+`example.com wants you to sign in with your Ethereum account:
+//"\x19Ethereum Signed Message:\n395"+
+`example.com wants you to sign in with your Ethereum account:
 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
 
 I accept the ExampleOrg Terms of Service: https://example.com/tos
@@ -74,7 +75,8 @@ Resources:
 				},
 			},
 			Expected:
-"\x19Ethereum Signed Message:\n400"+`example.com:3388 wants you to sign in with your Ethereum account:
+//"\x19Ethereum Signed Message:\n400"+
+`example.com:3388 wants you to sign in with your Ethereum account:
 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
 
 I accept the ExampleOrg Terms of Service: https://example.com/tos
