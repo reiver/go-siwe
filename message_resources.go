@@ -1,9 +1,5 @@
 package siwe
 
-import (
-	"sourcecode.social/reiver/go-opt"
-)
-
 func (receiver *Message) AppendResource(value string) {
 	receiver.Resources = append(receiver.Resources, value)
 }
