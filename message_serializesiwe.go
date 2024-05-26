@@ -1,7 +1,7 @@
 package siwe
 
 import (
-	"strconv"
+//	"strconv"
 
 	"github.com/reiver/go-ascii"
 )
@@ -13,7 +13,7 @@ func (receiver Message) SerializeSIWE() ([]byte, error) {
 
 func (receiver Message) SerializeSIWEAppend(p []byte) ([]byte, error) {
 
-	var initiallength int = len(p)
+//	var initiallength int = len(p)
 
 	// [ scheme "://" ] domain %s" wants you to sign in with your Ethereum account:"
 	{
@@ -95,6 +95,7 @@ func (receiver Message) SerializeSIWEAppend(p []byte) ([]byte, error) {
 		}
 	}
 
+/*
 	// \x19Ethereum Signed Message:\n<length of message>
 	var prefixbuffer [256]byte
 	var prefix []byte = prefixbuffer[0:0]
@@ -104,9 +105,10 @@ func (receiver Message) SerializeSIWEAppend(p []byte) ([]byte, error) {
 		prefix = append(prefix, "\x19Ethereum Signed Message:\n"...)
 		prefix = append(prefix, strconv.FormatInt(int64(length), 10)...)
 	}
+*/
 
 	{
-		p = append(p[:initiallength], append(prefix, p[initiallength:]...)...)
+//		p = append(p[:initiallength], append(prefix, p[initiallength:]...)...)
 		return p, nil
 	}
 }
